@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Monkey 15",
+  "version": "20180804",
+  "description": "Make the web better",
+
+  "applications": {
+    "gecko": {
+      "id": "monkey15@ford-rt.com",
+      "strict_min_version": "62.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://bg24.beget.com/company/personal/user/*/"],
+      "js": ["lib/utils.js", "lib/bg24.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://hp.beget.ru/ticket/*", "https://hp.beget.ru/queue/*"],
+      "js": ["Index.js", "Notificator.js", "Pickers.js", "Ticket.js", "Tickets.js", "Worker.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

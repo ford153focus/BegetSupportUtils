@@ -1,0 +1,20 @@
+#profile-navigation {
+    align-items: center;
+    display: flex;
+    float: right;
+    justify-content: center;
+    position: relative;
+}
+
+#profile-navigation div {
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 64px;
+    cursor: pointer;
+    display: flex;
+    height: 52px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 52px;
+}
